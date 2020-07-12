@@ -1,1 +1,15 @@
-# to-do-app
+# To Do App
+simple To Do App.
+
+## How to Run?
+
+1- clone project:
+```bash
+git clone https://github.com/aliaasayed/to-do-app.git
+```
+
+2- run app: 
+        - run "npm i"
+        - run "npm start"
+        - the server is runing on port 3000
+
