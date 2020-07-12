@@ -9,7 +9,8 @@ git clone https://github.com/aliaasayed/to-do-app.git
 ```
 
 2- run app: 
-        - run "npm i"
-        - run "npm start"
-        - the server is runing on port 3000
+
+    # install dependencies using "npm i"
+    # start the server using "npm start"
+    # the server is runing on port 3000
 
