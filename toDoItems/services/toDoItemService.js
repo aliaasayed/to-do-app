@@ -35,12 +35,20 @@ class ToDoItemService {
             _id: id,
             userId: user._id
         }
-        return ToDoItems.update(query,params);
+        return ToDoItems.update(query, params);
 
     }
 
-    async deleteItem() {
+    async deleteItem(user, id) {
+        const item = await ToDoItems.findOne({
+            _id: id,
+            userId: user._id
+        });
 
+        if (item)
+            return ToDoItems.delete(id);
+        else
+            throw new Error('Cannot Find Item');
     }
 }
 
